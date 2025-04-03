@@ -1,6 +1,4 @@
-let round = 1
-
-while(round <= 3){
+for(let round = 1; round <= 3; rodada++){
     console.log("Rodada: "+ round)
     
     let playerChoice = prompt("Nível " +round+", escolha o piso: 1, 2 ou 3.")
@@ -10,11 +8,9 @@ while(round <= 3){
     if(playerChoice == glassFloor){
         alert("O piso quebrou! Acabou o jogo para você")
         round = 1000;
-    }else if(round == 3){
+    }else if(round == 0){
         alert("Parabéns! Você está vivo!")
     }else{
         alert("Você passou! Piso quebrado estava na ponte: " +glassFloor+ " Escolha o piso: 1, 2 ou 3.")
     }
-
-    round = round + 1
 }
